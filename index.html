@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mashroom サポート</title>
+  <meta name="description" content="Mashroom（マッシュルーム）— キノコ観察・同定用フォトログのサポートページです。" />
+  <style>
+    :root {
+      --bg: #f3f6f2;
+      --card: #ffffff;
+      --ink: #1c2b22;
+      --muted: #5a6b60;
+      --accent: #2d4a2f;
+      --accent-soft: #e7f0e6;
+      --line: #d5e0d4;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+      background:
+        radial-gradient(circle at top left, #dcead8 0%, transparent 42%),
+        linear-gradient(180deg, #eef4ec 0%, var(--bg) 100%);
+      color: var(--ink);
+      line-height: 1.7;
+    }
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 20px 80px;
+    }
+    .badge {
+      display: inline-block;
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      background: var(--accent-soft);
+      border: 1px solid #c5d8c4;
+      border-radius: 999px;
+      padding: 4px 10px;
+      margin-bottom: 16px;
+    }
+    h1 {
+      font-size: 2rem;
+      margin: 0 0 8px;
+      letter-spacing: 0.02em;
+    }
+    .lead {
+      color: var(--muted);
+      margin: 0 0 28px;
+    }
+    section {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 22px 22px 18px;
+      margin-bottom: 16px;
+      box-shadow: 0 8px 24px rgba(28, 43, 34, 0.04);
+    }
+    h2 {
+      font-size: 1.05rem;
+      margin: 0 0 10px;
+    }
+    p, li { color: var(--ink); }
+    ul { margin: 8px 0 0; padding-left: 1.2em; }
+    a { color: var(--accent); }
+    .contact {
+      font-size: 1.05rem;
+      font-weight: 600;
+    }
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .nav a {
+      text-decoration: none;
+      font-weight: 600;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      border: 1px solid #c5d8c4;
+    }
+    footer {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    .warn {
+      background: #fff8f0;
+      border-color: #f0d9b8;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="badge">SUPPORT</div>
+    <h1>Mashroom サポート</h1>
+    <p class="lead">
+      Mashroom（マッシュルーム）は、野生キノコの観察・同定を助ける写真記録アプリです。
+      ログイン不要で、データは端末内に保存されます。
+    </p>
+
+    <div class="nav">
+      <a href="./privacy.html">プライバシーポリシー</a>
+      <a href="mailto:appnameshin@gmail.com">お問い合わせ</a>
+    </div>
+
+    <section>
+      <h2>アプリについて</h2>
+      <ul>
+        <li>傘・ひだ／管孔・柄・全景など、同定に効く部位をガイド付きで撮影・整理</li>
+        <li>過去の写真をまとめて取り込み、あとからラベル付け</li>
+        <li>和名・科・属・学名・同定確度・採取の有無（観察のみ／採取あり）を記録</li>
+        <li>写真の撮影日時・位置・焦点距離（EXIF）を活用</li>
+        <li>カレンダー・検索で振り返り</li>
+        <li>きのこグループ等への共有（位置情報は載せる／載せないを選択可能）</li>
+      </ul>
+    </section>
+
+    <section class="warn">
+      <h2>ご利用上のお願い</h2>
+      <ul>
+        <li>本アプリは同定の<strong>参考記録用</strong>です。種類の断定や食用可否の判断は行いません。</li>
+        <li>わからないキノコは<strong>絶対に食べない</strong>でください。</li>
+        <li>保護区など採取禁止の場所では「観察のみ」で記録してください。</li>
+        <li>産地が特定されると採取圧で枯渇することがあります。共有時の位置公開にはご注意ください。</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>お問い合わせ</h2>
+      <p class="contact">
+        <a href="mailto:appnameshin@gmail.com">appnameshin@gmail.com</a>
+      </p>
+      <p>返信まで数日いただく場合があります。できるだけ詳しく書いていただけると助かります。</p>
+    </section>
+
+    <section>
+      <h2>お問い合わせ時に書いてほしいこと</h2>
+      <ul>
+        <li>端末（例: iPhone 15 Pro）と iOS のバージョン</li>
+        <li>起きていること（例: まとめて取り込みができない）</li>
+        <li>可能なら、再現手順やスクリーンショット</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>プライバシーについて</h2>
+      <p>
+        Mashroom はアカウント登録なしで使えます。写真・位置などのデータは端末上で処理・保存します。
+        詳しくは <a href="./privacy.html">プライバシーポリシー</a> および App Store の「アプリのプライバシー」をご確認ください。
+      </p>
+    </section>
+
+    <footer>
+      © <span id="y"></span> Mashroom / Shintaro Namekawa
+    </footer>
+  </main>
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

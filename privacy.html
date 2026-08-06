@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mashroom プライバシーポリシー</title>
+  <meta name="description" content="Mashroom（マッシュルーム）のプライバシーポリシーです。" />
+  <style>
+    :root {
+      --bg: #f3f6f2;
+      --card: #ffffff;
+      --ink: #1c2b22;
+      --muted: #5a6b60;
+      --accent: #2d4a2f;
+      --accent-soft: #e7f0e6;
+      --line: #d5e0d4;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+      background:
+        radial-gradient(circle at top left, #dcead8 0%, transparent 42%),
+        linear-gradient(180deg, #eef4ec 0%, var(--bg) 100%);
+      color: var(--ink);
+      line-height: 1.75;
+    }
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 20px 80px;
+    }
+    .badge {
+      display: inline-block;
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      background: var(--accent-soft);
+      border: 1px solid #c5d8c4;
+      border-radius: 999px;
+      padding: 4px 10px;
+      margin-bottom: 16px;
+    }
+    h1 {
+      font-size: 1.8rem;
+      margin: 0 0 8px;
+    }
+    .meta {
+      color: var(--muted);
+      margin: 0 0 24px;
+      font-size: 0.95rem;
+    }
+    section {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 22px;
+      margin-bottom: 14px;
+      box-shadow: 0 8px 24px rgba(28, 43, 34, 0.04);
+    }
+    h2 {
+      font-size: 1.05rem;
+      margin: 0 0 10px;
+    }
+    p, li { color: var(--ink); }
+    ul { margin: 8px 0 0; padding-left: 1.2em; }
+    a { color: var(--accent); }
+    footer {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="badge">PRIVACY</div>
+    <h1>プライバシーポリシー</h1>
+    <p class="meta">
+      対象アプリ: Mashroom（Bundle ID: mushroom.collection.jp）<br />
+      最終更新日: 2026年8月7日<br />
+      <a href="./index.html">サポートページへ戻る</a>
+    </p>
+
+    <section>
+      <h2>1. はじめに</h2>
+      <p>
+        本ポリシーは、iOS アプリ「Mashroom」（以下「本アプリ」）における情報の取り扱いについて説明します。
+        本アプリは、野生キノコの観察・同定を補助する写真記録アプリです。
+      </p>
+    </section>
+
+    <section>
+      <h2>2. 収集する情報</h2>
+      <p>本アプリは<strong>アカウント登録を必要としません</strong>。当社（開発者）のサーバーへ写真や位置情報を送信して保存する仕組みはありません。</p>
+      <p>端末上で次の情報を扱うことがあります。</p>
+      <ul>
+        <li><strong>写真</strong>（カメラ撮影、またはフォトライブラリから選択した画像）</li>
+        <li><strong>写真のメタデータ（EXIF）</strong>（撮影日時、焦点距離、画像に含まれる場合の位置情報など）</li>
+        <li><strong>端末の位置情報</strong>（利用中のみ。アプリ内カメラ撮影時の補完、地図表示のため。ユーザーの許可が必要）</li>
+        <li><strong>ユーザーが入力した記録</strong>（和名・科・属・学名・メモ・採取区分・同定確度など）</li>
+      </ul>
+      <p>これらの情報は、原則として端末内（アプリのローカルストレージ）に保存されます。</p>
+    </section>
+
+    <section>
+      <h2>3. 利用目的</h2>
+      <ul>
+        <li>キノコ観察記録の作成・編集・検索・カレンダー表示</li>
+        <li>同定に必要な部位写真の整理（ラベル付け）</li>
+        <li>撮影日時・位置・サイズ概算などの記録補助</li>
+        <li>ユーザー操作による外部アプリへの共有（例: Share Sheet 経由の投稿）</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>4. 共有について</h2>
+      <p>
+        ユーザーが「共有」機能を使う場合、選択した写真と投稿文が iOS の共有シートを通じて、
+        ユーザーが選んだアプリ（メッセージ、SNS など）に渡されます。
+      </p>
+      <ul>
+        <li>共有する写真は再エンコードされ、画像内の GPS（EXIF）は原則として除去されます。</li>
+        <li>投稿文への位置情報の掲載は、共有時にユーザーが選択できます（デフォルトは非公開）。</li>
+        <li>開発者が共有先へ自動投稿することはありません。</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>5. 第三者提供・トラッキング</h2>
+      <ul>
+        <li>広告 SDK、解析 SDK、ログイン基盤は使用していません。</li>
+        <li>トラッキング（他社アプリ横断の広告識別など）は行いません。</li>
+        <li>開発者が写真や位置を外部サーバーへアップロードして収集することはありません。</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>6. データの削除</h2>
+      <p>
+        アプリ内の記録削除、または本アプリのアンインストールにより、端末内の本アプリデータは削除されます。
+        フォトライブラリ内の元写真は、本アプリが削除しても消えません（コピーを保存しているため）。
+      </p>
+    </section>
+
+    <section>
+      <h2>7. 子どものプライバシー</h2>
+      <p>
+        本アプリは子どもから特別に情報を収集することを目的としていません。
+        保護者の方は、端末の権限設定（カメラ・写真・位置情報）をご確認ください。
+      </p>
+    </section>
+
+    <section>
+      <h2>8. ポリシーの変更</h2>
+      <p>
+        本ポリシーは必要に応じて更新することがあります。重要な変更がある場合は、本ページの「最終更新日」を改訂します。
+      </p>
+    </section>
+
+    <section>
+      <h2>9. お問い合わせ</h2>
+      <p>
+        本ポリシーに関するお問い合わせ:<br />
+        <a href="mailto:appnameshin@gmail.com">appnameshin@gmail.com</a><br />
+        開発者: Shintaro Namekawa
+      </p>
+    </section>
+
+    <footer>
+      © <span id="y"></span> Mashroom / Shintaro Namekawa
+    </footer>
+  </main>
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
