@@ -1,50 +1,31 @@
 # Mashroom サポート／プライバシー（GitHub Pages 用）
 
-TrailTune（GPX）と同じ考え方で、App Store Connect に貼る公開ページです。
+App Store Connect に貼る公開ページです。
 
-## ファイル
-
-| ファイル | 用途 | App Store Connect |
-|----------|------|-------------------|
-| `index.html` | アプリ説明・サポート | **サポートURL** |
-| `privacy.html` | プライバシーポリシー | **プライバシーポリシーURL** |
-
-お問い合わせメール: `appnameshin@gmail.com`（TrailTune と同じ）
-
-## 公開方法（おすすめ）: GitHub Pages
-
-### A. 専用リポジトリ（いちばん簡単）
-
-1. GitHub でリポジトリ作成（例: `mashroom-support`、Public）
-2. このフォルダの中身を **リポジトリ直下** に置く  
-   （`index.html` と `privacy.html` がルートにある状態）
-3. Settings → Pages  
-   - Source: Deploy from a branch  
-   - Branch: `main` / `/ (root)`  
-4. 数分後の URL 例:
+公開URL:
 
 ```
 サポート:     https://name-shintaro.github.io/mashroom-support/
+製品仕様:     https://name-shintaro.github.io/mashroom-support/spec.html
 プライバシー: https://name-shintaro.github.io/mashroom-support/privacy.html
+リポジトリ:   https://github.com/name-shintaro/mashroom-support
 ```
 
-（GitHub ユーザー名が違う場合は置き換えてください）
+お問い合わせ: `appnameshin@gmail.com`
 
-### B. 本リポジトリの docs を使う場合
+## ファイル
 
-1. GitHub に `mashroom` リポジトリを push
-2. Settings → Pages  
-   - Source: Deploy from a branch  
-   - Branch: `main` / `/docs`  
-3. さらに `docs/support` をルートにしたい場合は、Pages のフォルダ設定か、専用リポジトリ（A）の方が確実です。
+| ファイル | 用途 |
+|----------|------|
+| `index.html` | アプリ説明・使い方・サポート（ASC サポートURL） |
+| `spec.html` | 製品仕様（Ver 1.0 (3)、印刷可） |
+| `privacy.html` | プライバシーポリシー |
 
-**審査用には A（専用リポジトリ直下に HTML）を推奨します。**
+## 更新の流れ
 
-## App Store Connect への貼り方
-
-1. アプリ → App 情報 / アプリのプライバシー  
-2. サポートURL → `.../mashroom-support/`  
-3. プライバシーポリシーURL → `.../mashroom-support/privacy.html`
+1. 本リポジトリ `docs/support/` を編集
+2. 内容を `mashroom-support` リポジトリ直下へコピーして push（Pages は `main` / root）
+3. 数分待って公開URLを確認
 
 ## ローカル確認
 
@@ -52,3 +33,11 @@ TrailTune（GPX）と同じ考え方で、App Store Connect に貼る公開ペ�
 open /Users/nameshin/mashroom/docs/support/index.html
 open /Users/nameshin/mashroom/docs/support/privacy.html
 ```
+
+## 変更履歴（要約）
+
+| 日付 | 内容 |
+|------|------|
+| 2026-08-07 | 初版公開 |
+| 2026-08-08 | Ver 1.1 向け改定（形態・植生、同ラベル複数、共有クリップボード、FAQ） |
+| 2026-08-12 | Ver 1.0 (3) 向け改定。製品仕様ページ追加、カメラロール／機材EXIF／LiDAR傘径 |

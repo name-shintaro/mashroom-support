@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mashroom 製品仕様 — Ver 1.0 (3)</title>
+  <meta name="description" content="Mashroom（マッシュルーム）Ver 1.0 (3) の製品仕様です。できること・記録項目・プライバシーをまとめています。" />
+  <style>
+    :root {
+      --bg: #f3f6f2;
+      --card: #ffffff;
+      --ink: #1c2b22;
+      --muted: #5a6b60;
+      --accent: #2d4a2f;
+      --accent-soft: #e7f0e6;
+      --line: #d5e0d4;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+      background:
+        radial-gradient(circle at top left, #dcead8 0%, transparent 42%),
+        linear-gradient(180deg, #eef4ec 0%, var(--bg) 100%);
+      color: var(--ink);
+      line-height: 1.65;
+      font-size: 15px;
+    }
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 40px 20px 72px;
+    }
+    .badge {
+      display: inline-block;
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      background: var(--accent-soft);
+      border: 1px solid #c5d8c4;
+      border-radius: 999px;
+      padding: 4px 10px;
+      margin-bottom: 16px;
+    }
+    h1 { font-size: 1.85rem; margin: 0 0 8px; }
+    h2 { font-size: 1.05rem; margin: 0 0 10px; }
+    h3 { font-size: 0.95rem; margin: 14px 0 6px; color: var(--accent); }
+    .lead { color: var(--muted); margin: 0 0 10px; }
+    .meta { color: var(--muted); font-size: 0.9rem; margin: 0 0 20px; }
+    section {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 20px 22px 16px;
+      margin-bottom: 14px;
+      box-shadow: 0 8px 24px rgba(28, 43, 34, 0.04);
+    }
+    p, li { color: var(--ink); }
+    ul { margin: 6px 0 0; padding-left: 1.2em; }
+    ol { margin: 6px 0 0; padding-left: 1.3em; }
+    a { color: var(--accent); }
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+    .nav a {
+      text-decoration: none;
+      font-weight: 600;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      border: 1px solid #c5d8c4;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.92rem;
+      margin-top: 8px;
+    }
+    th, td {
+      border: 1px solid var(--line);
+      padding: 7px 9px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th { background: var(--accent-soft); font-weight: 600; }
+    .warn {
+      background: #fff8f0;
+      border-color: #f0d9b8;
+    }
+    footer {
+      margin-top: 24px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    @media print {
+      @page { size: A4; margin: 14mm 15mm; }
+      body {
+        background: #fff;
+        font-size: 10.5pt;
+        line-height: 1.45;
+      }
+      main { max-width: none; padding: 0; }
+      .nav, .noprint { display: none !important; }
+      .badge { margin-bottom: 8px; }
+      h1 { font-size: 16pt; }
+      h2 { font-size: 11.5pt; }
+      h3 { font-size: 10.5pt; margin-top: 8px; }
+      section {
+        box-shadow: none;
+        border-radius: 0;
+        padding: 8px 0 6px;
+        margin: 0 0 6px;
+        break-inside: avoid;
+      }
+      table { font-size: 9.5pt; }
+      th, td { padding: 4px 6px; }
+      footer { margin-top: 8px; font-size: 9pt; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="badge">SPEC</div>
+    <h1>Mashroom 製品仕様</h1>
+    <p class="lead">
+      野生キノコの観察・同定依頼を助ける、個人向けフォトログの仕様です。
+    </p>
+    <p class="meta">
+      対象バージョン: <strong>1.0 (3)</strong>（Marketing 1.0 / Build 3）<br />
+      Bundle ID: mushroom.collection.jp ／ iPhone 専用・iOS 17.0+・日本語 ／ 最終更新: 2026年8月12日
+    </p>
+
+    <div class="nav noprint">
+      <a href="./index.html">サポート</a>
+      <a href="./privacy.html">プライバシー</a>
+      <a href="mailto:appnameshin@gmail.com">お問い合わせ</a>
+    </div>
+
+    <section>
+      <h2>1. 目的と位置づけ</h2>
+      <p>
+        Mashroom は、撮影ガイドに沿って部位写真を残し、日時・位置・形態・植生を端末内に記録し、
+        同定コミュニティなどへ共有するためのアプリです。ログイン不要・課金なし。
+      </p>
+      <table>
+        <thead>
+          <tr><th>やること</th><th>やらないこと</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>同定用写真の計画的な記録</td><td>種の自動同定・AI判定</td></tr>
+          <tr><td>観察メモ（形態・植生・確度）</td><td>食用可否の判定・推奨</td></tr>
+          <tr><td>ローカル保存・オフライン利用</td><td>アカウント・クラウド同期</td></tr>
+          <tr><td>位置付きマップ（1件）</td><td>全記録マップ一覧・オフライン地図</td></tr>
+        </tbody>
+      </table>
+      <p>
+        本アプリは図鑑・同定の代替ではありません。食用・毒性の判断は行いません。
+        保護区域などでは「観察のみ」での記録を推奨します。
+      </p>
+    </section>
+
+    <section>
+      <h2>2. 画面と主な流れ</h2>
+      <p>タブ: <strong>図鑑</strong>（一覧）／ <strong>カレンダー</strong></p>
+
+      <h3>2.1 撮影して記録</h3>
+      <ol>
+        <li>部位ステップを順に撮影（すべて任意、1枚以上で保存可）<br />①全景・群生 ②傘表面 ③傘と柄 ④ひだ／管孔 ⑤柄 ⑥断面</li>
+        <li>アプリ内カメラ（ガイド枠・端末向き連動）またはライブラリ選択。スキップ可。</li>
+        <li>撮影時オプション: カメラロールへ同時保存（既定オン）。</li>
+        <li>確認: 和名・採取区分・確度・EXIF（日時・位置・機材・焦点距離）・傘径・マップ位置。</li>
+      </ol>
+
+      <h3>2.2 まとめて取り込み</h3>
+      <p>
+        カメラロールから複数枚選択 → 除外／確認 → 1枚ずつ部位ラベル → 和名・日時・位置 → 保存。
+        取り込み名は和名に保存。同じ部位ラベルを複数枚に付けてよい。
+      </p>
+
+      <h3>2.3 一覧・詳細・編集</h3>
+      <ul>
+        <li>一覧: 検索、同定確度／採取区分フィルタ。</li>
+        <li>詳細: ギャラリー、形態・植生、EXIF・機材・マップ、編集、共有、カメラロールへ書き出し、削除。</li>
+        <li>写真のラベル整理: 付け直し・追加取り込み・写真削除。</li>
+        <li>カレンダー: 撮影日ベースの振り返り。</li>
+      </ul>
+
+      <h3>2.4 共有（同定依頼など）</h3>
+      <p>
+        写真選択 → 位置の公開範囲 → 投稿スタイル（同定依頼／Instagram／短いメモ）→ 本文編集 → 共有シート。
+        投稿文はクリップボードへ自動コピー。共有JPEGは再エンコードし、写真内GPSを除去します。
+      </p>
+    </section>
+
+    <section>
+      <h2>3. 機能仕様</h2>
+      <h3>3.1 写真・カメラ</h3>
+      <table>
+        <thead><tr><th>項目</th><th>内容</th></tr></thead>
+        <tbody>
+          <tr><td>ガイド</td><td>部位別の枠／シルエット。端末の向きに合わせて回転</td></tr>
+          <tr><td>深度</td><td>LiDAR対応機は距離から傘径の参考値（枠前提・手修正可・実測推奨）</td></tr>
+          <tr><td>GPS</td><td>EXIF位置を優先。無い場合は端末GPS補完可。マップで手指定／クリア可</td></tr>
+          <tr><td>EXIF</td><td>撮影日時、緯度経度標高、焦点距離、被写体距離、機材（メーカー／機種／レンズ）</td></tr>
+          <tr><td>カメラロール</td><td>撮影時の同時保存、詳細からの既存写真の一括書き出し</td></tr>
+        </tbody>
+      </table>
+
+      <h3>3.2 記録できる項目</h3>
+      <table>
+        <thead><tr><th>区分</th><th>項目</th></tr></thead>
+        <tbody>
+          <tr><td>分類</td><td>和名、科、属、学名</td></tr>
+          <tr><td>管理</td><td>同定確度（未設定／仮／有力／確定）、採取（観察のみ／採取あり／未設定）</td></tr>
+          <tr><td>位置</td><td>緯度・経度・標高、場所メモ</td></tr>
+          <tr><td>光学</td><td>焦点距離、傘径、撮影機材</td></tr>
+          <tr><td>形態</td><td>傘の形・表面・縁、ひだ／管孔、つき方・疎密、乳汁、傷つけ変色、におい</td></tr>
+          <tr><td>植生</td><td>基質（地上／材上など）、植生タイプ、宿主樹メモ</td></tr>
+        </tbody>
+      </table>
+
+      <h3>3.3 共有時の位置</h3>
+      <table>
+        <thead><tr><th>選択肢</th><th>意味</th></tr></thead>
+        <tbody>
+          <tr><td>載せない（初期値）</td><td>座標・場所メモとも投稿文に出さない</td></tr>
+          <tr><td>場所メモのみ</td><td>自由記述の場所メモのみ</td></tr>
+          <tr><td>座標も</td><td>座標を含める（取り扱い注意）</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>4. 技術の概要</h2>
+      <ul>
+        <li>SwiftUI / SwiftData。写真は端末内 JPEG。</li>
+        <li>カメラ（AVFoundation）。LiDAR対応機では深度を利用。</li>
+        <li>EXIF（ImageIO）、位置（Core Location）、地図（MapKit）、共有（Share Sheet）。</li>
+        <li>権限: カメラ、写真ライブラリ、写真への追加、位置情報（利用中）。</li>
+      </ul>
+    </section>
+
+    <section class="warn">
+      <h2>5. プライバシー・安全・限界</h2>
+      <ul>
+        <li>データは端末ローカルのみ。サーバー送信・解析SDKなし。</li>
+        <li>共有の位置はデフォルト非公開。共有画像からGPSを除去。</li>
+        <li>食用・毒性の断定UIなし。種名はユーザー入力。</li>
+        <li>傘径は概算であり、定規の代替ではありません。</li>
+        <li>アプリ内保存時にJPEGを再エンコードするため、ファイル内EXIFは残らないことがあります（表示用の主要項目は記録として保持）。</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>6. 用語</h2>
+      <table>
+        <thead><tr><th>用語</th><th>意味</th></tr></thead>
+        <tbody>
+          <tr><td>部位ラベル</td><td>全景・傘・形・ひだ／管孔・柄・断面の区分</td></tr>
+          <tr><td>傘径概算</td><td>焦点距離と被写体距離（または深度）からの参考値</td></tr>
+          <tr><td>観察のみ</td><td>採取せず記録する区分（保護区等向け）</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <footer>
+      © <span id="y"></span> Mashroom / Shintaro Namekawa ／
+      サポート: <a href="./index.html">mashroom-support</a>
+    </footer>
+  </main>
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
