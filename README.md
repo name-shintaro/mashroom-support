@@ -47,3 +47,4 @@ open /Users/nameshin/mashroom/docs/support/privacy.html
 | 2026-08-08 | 形態・植生、同ラベル複数、共有クリップボード、FAQ |
 | 2026-08-12 | 製品仕様ページ追加、カメラロール／機材EXIF／LiDAR傘径 |
 | 2026-08-13 | 公式表記を App Store Ver 1.0 / Build 2 に統一。1.1.0 は次期草案へ |
+| 2026-08-13 | 端末に内部版 1.1.0 と出うる注記を仕様ページへ追加 |
