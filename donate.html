@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mashroom 開発を支える</title>
+  <meta name="description" content="きのこ写真日記図鑑（Mashroom）の開発継続への任意の支援について。" />
+  <style>
+    :root {
+      --bg: #f3f6f2;
+      --card: #ffffff;
+      --ink: #1c2b22;
+      --muted: #5a6b60;
+      --accent: #2d4a2f;
+      --accent-soft: #e7f0e6;
+      --line: #d5e8d4;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+      background:
+        radial-gradient(circle at top left, #dcead8 0%, transparent 42%),
+        linear-gradient(180deg, #eef4ec 0%, var(--bg) 100%);
+      color: var(--ink);
+      line-height: 1.7;
+    }
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 20px 80px;
+    }
+    .badge {
+      display: inline-block;
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      background: var(--accent-soft);
+      border: 1px solid #c5d8c4;
+      border-radius: 999px;
+      padding: 4px 10px;
+      margin-bottom: 16px;
+    }
+    h1 {
+      font-size: 2rem;
+      margin: 0 0 8px;
+      letter-spacing: 0.02em;
+    }
+    .lead {
+      color: var(--muted);
+      margin: 0 0 20px;
+    }
+    .meta {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin: -8px 0 20px;
+    }
+    section {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 22px 22px 18px;
+      margin-bottom: 16px;
+      box-shadow: 0 8px 24px rgba(28, 43, 34, 0.04);
+    }
+    h2 {
+      font-size: 1.05rem;
+      margin: 0 0 10px;
+    }
+    p, li { color: var(--ink); }
+    ul { margin: 8px 0 0; padding-left: 1.2em; }
+    a { color: var(--accent); }
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .nav a {
+      text-decoration: none;
+      font-weight: 600;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      border: 1px solid #c5d8c4;
+    }
+    .cta {
+      display: inline-block;
+      text-decoration: none;
+      font-weight: 700;
+      color: #fff;
+      background: var(--accent);
+      border-radius: 999px;
+      padding: 12px 20px;
+      margin: 12px 0 4px;
+    }
+    .cta.secondary {
+      color: var(--accent);
+      background: var(--accent-soft);
+      border: 1px solid #c5d8c4;
+    }
+    .method {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 16px;
+      margin: 12px 0;
+      background: #fbfdfb;
+    }
+    .method.recommend {
+      border-color: #b7d0b4;
+      background: var(--accent-soft);
+    }
+    .tag {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      color: var(--accent);
+      background: #fff;
+      border-radius: 999px;
+      padding: 2px 8px;
+      margin-bottom: 6px;
+    }
+    .warn {
+      background: #fff8f0;
+      border-color: #f0d9b8;
+    }
+    footer {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="badge">SUPPORT THE APP</div>
+    <h1>開発を支える</h1>
+    <p class="lead">
+      きのこ写真日記図鑑（Mashroom）は、広告も課金もなく使えます。
+      支援は任意です。金額の多寡で機能は変わりません。
+    </p>
+    <p class="meta">最終更新: 2026年8月17日</p>
+
+    <div class="nav">
+      <a href="./index.html">サポート</a>
+      <a href="./privacy.html">プライバシー</a>
+      <a href="mailto:appnameshin@gmail.com">お問い合わせ</a>
+    </div>
+
+    <section>
+      <h2>なにに使うか</h2>
+      <p>頂いたご支援は、個人開発の継続に使います。</p>
+      <ul>
+        <li>Apple Developer Program の年会費</li>
+        <li>実機での撮影検証（マクロなど）</li>
+        <li>App Store への更新作業</li>
+      </ul>
+      <p>クラウド同期や広告のためのサーバー費はありません。記録は端末内だけです。</p>
+    </section>
+
+    <section>
+      <h2>いまの受け取り方</h2>
+      <p>公開ページに口座番号は載せません。送りたい方だけ、メールでご案内します。</p>
+
+      <div class="method recommend">
+        <div class="tag">日本国内向け・推奨</div>
+        <h2>銀行振込</h2>
+        <p>
+          手数料が少なく、口座をサイトに出さずに済みます。
+          下のメールから「口座案内希望」と送ってください。名義と口座をお返しします。
+        </p>
+        <a class="cta" href="mailto:appnameshin@gmail.com?subject=%E3%80%90Mashroom%E3%80%91%E6%8C%AF%E8%BE%BC%E5%8F%A3%E5%BA%A7%E3%81%AE%E6%A1%88%E5%86%85&amp;body=%E9%8A%80%E8%A1%8C%E6%8C%AF%E8%BE%BC%E3%81%A7%E6%94%AF%E6%8F%B4%E3%81%97%E3%81%9F%E3%81%84%E3%81%AE%E3%81%A7%E3%80%81%E5%8F%A3%E5%BA%A7%E3%82%92%E6%95%99%E3%81%88%E3%81%A6%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84%E3%80%82">
+          口座案内をメールで受け取る
+        </a>
+      </div>
+
+      <div class="method">
+        <div class="tag">カード・海外向け</div>
+        <h2>PayPal</h2>
+        <p>
+          カードや海外からの送金向きです。PayPal.Me の公開リンクは、用意でき次第この欄に置きます。
+          先に送りたい場合は、メールに「PayPal で支援したい」と書いてください。
+        </p>
+        <a class="cta secondary" href="mailto:appnameshin@gmail.com?subject=%E3%80%90Mashroom%E3%80%91PayPal%E3%81%A7%E3%81%AE%E6%94%AF%E6%8F%B4&amp;body=PayPal%E3%81%A7%E6%94%AF%E6%8F%B4%E3%81%97%E3%81%9F%E3%81%84%E3%81%A7%E3%81%99%E3%80%82">
+          PayPal の送り方を聞く
+        </a>
+      </div>
+    </section>
+
+    <section class="warn">
+      <h2>ご理解いただきたいこと</h2>
+      <ul>
+        <li>支援は<strong>任意</strong>です。送らなくても、すべての機能を使えます。</li>
+        <li>返礼品・プレミアム機能・同定の優先対応はありません。</li>
+        <li>購入やサブスクではありません。アプリ内課金でもありません。</li>
+        <li>認定NPOなどへの寄附ではないため、<strong>寄附金控除の対象にはなりません</strong>。</li>
+        <li>食べられるか、毒があるかの判定は、支援の有無にかかわらず行いません。</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>アプリの中には置きません</h2>
+      <p>
+        Apple の審査方針により、個人開発のアプリ内に寄付ボタンを置くことはできません。
+        支援は、このウェブページとメールだけです。
+      </p>
+    </section>
+
+    <footer>
+      © <span id="y"></span> Mashroom / Shintaro Namekawa ／
+      <a href="./index.html">サポートへ戻る</a>
+    </footer>
+  </main>
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

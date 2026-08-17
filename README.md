@@ -11,6 +11,7 @@ App Store Connect に貼る公開ページです。
 製品仕様（公式）: https://name-shintaro.github.io/mashroom-support/spec.html
 次期草案:       https://name-shintaro.github.io/mashroom-support/spec-1.1.html
 プライバシー:   https://name-shintaro.github.io/mashroom-support/privacy.html
+開発を支える:   https://name-shintaro.github.io/mashroom-support/donate.html
 リポジトリ:     https://github.com/name-shintaro/mashroom-support
 ```
 
@@ -24,6 +25,7 @@ App Store Connect に貼る公開ページです。
 | `spec.html` | 製品仕様（公式 Ver 1.0 / Build 2、印刷可） |
 | `spec-1.1.html` | 次期アップデート草案（1.1.1 以降想定・未提出） |
 | `privacy.html` | プライバシーポリシー |
+| `donate.html` | 任意の開発支援（口座はメール案内。アプリ内には置かない） |
 
 ## 更新の流れ
 
@@ -43,8 +45,5 @@ open /Users/nameshin/mashroom/docs/support/privacy.html
 
 | 日付 | 内容 |
 |------|------|
-| 2026-08-07 | 初版公開 |
-| 2026-08-08 | 形態・植生、同ラベル複数、共有クリップボード、FAQ |
-| 2026-08-12 | 製品仕様ページ追加、カメラロール／機材EXIF／LiDAR傘径 |
-| 2026-08-13 | 公式表記を App Store Ver 1.0 / Build 2 に統一。1.1.0 は次期草案へ |
 | 2026-08-13 | 端末に内部版 1.1.0 と出うる注記を仕様ページへ追加 |
+| 2026-08-17 | 任意の開発支援ページ（donate.html）。口座は公開せずメール案内 |
