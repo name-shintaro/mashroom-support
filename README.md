@@ -25,7 +25,7 @@ App Store Connect に貼る公開ページです。
 | `spec.html` | 製品仕様（公式 Ver 1.0 / Build 2、印刷可） |
 | `spec-1.1.html` | 次期アップデート草案（1.1.1 以降想定・未提出） |
 | `privacy.html` | プライバシーポリシー |
-| `donate.html` | 任意の開発支援（口座はメール案内。アプリ内には置かない） |
+| `donate.html` | 任意の開発支援（銀行はメール案内、PayPal.Me は公開リンク） |
 
 ## 更新の流れ
 
@@ -46,4 +46,4 @@ open /Users/nameshin/mashroom/docs/support/privacy.html
 | 日付 | 内容 |
 |------|------|
 | 2026-08-13 | 端末に内部版 1.1.0 と出うる注記を仕様ページへ追加 |
-| 2026-08-17 | 任意の開発支援ページ（donate.html）。口座は公開せずメール案内 |
+| 2026-08-17 | 任意の開発支援ページ（donate.html）。口座は公開せずメール案内。PayPal.Me を掲載 |
